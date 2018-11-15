@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      安装Brian2？
+subtitle:   分享、记录我的安装过程
+date:       2018-11-15
+author:     HSI
+header-img: img/post-bg-desk.jpg
+catalog: 	 true
+tags:
+    - Brian2
+    - python
+    - Spyder
+---
 Record the experience I install the Brian2
 ===
 I install Brian2 with Anaconda in Windows 10(64 bit). At first, it was a really hard work for me that I failed for times. To be frankly, I am not good at doing this things like configuring environments etc. So I will only record how I install it sucessfully. 
