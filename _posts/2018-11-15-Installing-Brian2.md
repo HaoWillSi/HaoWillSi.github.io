@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      安装Brian2？
+title:      Install Brian2
 subtitle:   分享、记录我的安装过程
 date:       2018-11-15
 author:     HSI
