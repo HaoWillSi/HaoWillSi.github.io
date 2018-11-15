@@ -76,7 +76,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Learing never stops."
-#sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/post-bg-head.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
