@@ -65,7 +65,7 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: ef834f643192a548d56366bd9df8409e
 
 # Google Analytics
 #ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
@@ -75,7 +75,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Learing never stops."
+sidebar-about-description: "Learning never stops."
 sidebar-avatar: /img/post-bg-head.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
