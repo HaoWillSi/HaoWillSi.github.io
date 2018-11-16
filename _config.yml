@@ -68,8 +68,8 @@ netease_comment: false
 ba_track_id: ef834f643192a548d56366bd9df8409e
 
 # Google Analytics
-#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
+ga_track_id: 'UA-129320180-1'
+ga_domain: https://hardworkingchris.github.io
 
 
 
