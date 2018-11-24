@@ -4,7 +4,7 @@ title:      Learn Synapse through examples frompapers
 subtitle:   根据 Diesmann et al. (1999)文章code学习Synapse的使用
 date:       2018-11-24
 author:     HSI
-header-img: img/post-bg-desk.jpg
+header-img: img/2018-11-24-ffn.png
 catalog: 	 true
 tags:
     - Brian2
