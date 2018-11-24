@@ -34,9 +34,9 @@ The network part in the code of this paper is:<br>
         Sinput.connect()
 
 From which we could see the key roles of Synapse.
-```py
-S = Synapses(P, P, on_pre='y+=weight')
-```
+
+        S = Synapses(P, P, on_pre='y+=weight')
+
 
 Note that #groupsize = 100,total number=1000.<br>
 In the Synapse function, `P` is the neurongroup we created before, the note we should know is it is a full-connected network (?). `y` is 
