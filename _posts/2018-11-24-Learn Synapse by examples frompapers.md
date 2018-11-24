@@ -27,13 +27,13 @@ In the Brian2 tutorial files, I did not learn it carefully. Therefore, I will le
 
 The network part in the code of this paper is:<br>
 
-```py
-S = Synapses(P, P, on_pre='y+=weight')
-S.connect(j='k for k in range((int(i/group_size)+1)*group_size, (int(i/group_size)+2)*group_size) '
+
+        S = Synapses(P, P, on_pre='y+=weight')
+        S.connect(j='k for k in range((int(i/group_size)+1)*group_size, (int(i/group_size)+2)*group_size) '
             'if i<N_pre-group_size')           
-Sinput = Synapses(Pinput, P[:group_size], on_pre='y+=weight')
-Sinput.connect()
-```
+        Sinput = Synapses(Pinput, P[:group_size], on_pre='y+=weight')
+        Sinput.connect()
+
 From which we could see the key roles of Synapse.
 ```py
 S = Synapses(P, P, on_pre='y+=weight')
