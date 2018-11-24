@@ -26,20 +26,19 @@ In the Brian2 tutorial files, I did not learn it carefully. Therefore, I will le
 * Diesmann et al. (1999)<br>
 
 The network part in the code of this paper is:<br>
+
 ```py
 S = Synapses(P, P, on_pre='y+=weight')
-
 S.connect(j='k for k in range((int(i/group_size)+1)*group_size, (int(i/group_size)+2)*group_size) '
-            'if i<N_pre-group_size')
-            
+            'if i<N_pre-group_size')           
 Sinput = Synapses(Pinput, P[:group_size], on_pre='y+=weight')
-
 Sinput.connect()
 ```
 From which we could see the key roles of Synapse.
 ```py
 S = Synapses(P, P, on_pre='y+=weight')
 ```
+
 Note that #groupsize = 100,total number=1000.<br>
 In the Synapse function, `P` is the neurongroup we created before, the note we should know is it is a full-connected network (?). `y` is 
 a dynamic parameter of neuron model (integrate and fire model). The string in `on_pre` will be executed after every **pre-synaptic spike**.
@@ -50,15 +49,18 @@ The `Synapse` is used to model synapse of neurons. The connections among neurons
 Now, let's see more about the `Synapse class` in Brian2 documetions.<br>
 **Synapse class**<br>
 You could use it like this:
+
 ```py
 Synapses(source, target=None, model=None, on_pre=None, pre=None, on_post=None, post=None, connect=None, 
 delay=None, on_event='spike', multisynaptic_index=None, namespace=None, dtype=None, codeobj_class=None, 
 dt=None, clock=None, order=0, method=('exact', 'euler', 'heun'), method_options=None, name='synapses*')
 ```
+
 Class representing synaptic connections.
 
 Creating a new `Synapses` object does by default not create any synapses, you have to call the `Synapses.connect()` method for that.<br>
 （如果你指调用了Synapse，默认情况是没有任何实际的突触，你必须再调用Synapses.connect()之后，才会创建真正的突触。）<br>
+
 ```py
 class Synapses(Group):
     '''
@@ -144,12 +146,14 @@ class Synapses(Group):
         ``synapses``, ``synapses_1``, etc. will be automatically chosen.
     '''
 ```
+
 Through the grammar of `Synapse` above, we know how to use it. But as refered above, <br>
 Creating a new `Synapses` object does by default not create any synapses, you have to call the `Synapses.connect()` method for that.<br>
 Therefore, we then read the grammar about `connect()`:
 
 `connect(**kwds)`<br>
 Add synapses.<br>
+
 ```
 Parameters:	
 condition : str, bool, optional
@@ -190,7 +194,9 @@ level : int, optional
 
 How deep to go up the stack frame to look for the locals/global (see namespace argument).
 ```
+
 See some examples about `Synapse` and `connect`:
+
 ```py
 >>> from brian2 import *
 >>> import numpy as np
@@ -207,7 +213,9 @@ See some examples about `Synapse` and `connect`:
 #range(2),输出0,1.在i非边缘数时，耦合相邻的神经元
 >>> S.connect(j='k for k in sample(N_post, p=i*1.0/(N_pre-1))') # neuron i connects to j with probability i/(N-1)
 ```
+
 Come back to the code above, I try to understand it.
+
 ```py
 S.connect(j='k for k in range((int(i/group_size)+1)*group_size, (int(i/group_size)+2)*group_size) '
             'if i<N_pre-group_size')
@@ -217,10 +225,12 @@ S.connect(j='k for k in range((int(i/group_size)+1)*group_size, (int(i/group_siz
 则(int(i/group_size)+1)*group_size分别等于100,200,...,900.(int(i/group_size)+2)*group_size)分别为200,300,...,1000.
 所以这样的设置正好是设置了10层的耦合关系，而且只有前馈。大有用处，学习记下。
 ```
+
 ```py
 Sinput = Synapses(Pinput, P[:group_size], on_pre='y+=weight')
 Sinput.connect()
 ```
+
 The two sentences are used to inject input into the first layer including the neurons from 0~99.
 
 
