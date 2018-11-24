@@ -65,7 +65,7 @@ Creating a new `Synapses` object does by default not create any synapses, you ha
 
 ```py
 class Synapses(Group):
-    '''
+    
     Class representing synaptic connections.
 
     Creating a new `Synapses` object does by default not create any synapses,
@@ -146,7 +146,7 @@ class Synapses(Group):
     name : str, optional
         The name for this object. If none is given, a unique name of the form
         ``synapses``, ``synapses_1``, etc. will be automatically chosen.
-    '''
+    
 ```
 
 Through the grammar of `Synapse` above, we know how to use it. But as refered above, <br>
