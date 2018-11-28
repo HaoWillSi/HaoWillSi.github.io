@@ -1,11 +1,11 @@
 # Site settings
-title: HSI Blog
-SEOTitle: 阿司的笔记 | HSI Blog
+title: LeyangX Blog
+SEOTitle: 日常笔记 | LeyangX Blog
 header-img: img/post-bg-desk.jpg
-email: "sihaofocus@gmail.com"
-description: "This is HSI's blog to record the life of Learning, Exploring and Creating."
-keyword: "HSI, BUPT, CAUC, Neuronal Dynamics, Computational Neuroscience"
-url: "https://HardworkingChris.github.io"              # your host, for absolute URL
+email: "leyangx@163.com"
+description: "This is LeyangX's blog to record the life of Learning, Exploring and Creating."
+keyword: "LeyangX, Complex Network, Bipartite Network"
+url: "https://xueleyang.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-github_username:    HardworkingChris
+github_username:    xueleyang
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
