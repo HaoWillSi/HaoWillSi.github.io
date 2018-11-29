@@ -17,7 +17,8 @@ header:
 ---
 {% include lib/mathjax.html %}
 
-
+# 测试是否支持数学公式
+# It works!
 you can use an inline formula $$\forall x \in R$$ like this one
 
 
