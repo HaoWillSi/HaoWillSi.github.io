@@ -1,10 +1,10 @@
 # Site settings
-title: LeyangX
+title: LeyangX 
 SEOTitle: 日常笔记 | LeyangX Blog
 header-img: img/post-bg-desk.jpg
 email: "leyangx@163.com"
 description: "This is LeyangX's blog to record the life of Learning, Exploring and Creating."
-keyword: "LeyangX, Complex Network, Bipartite Network"
+keyword: "LeyangX, Complex Network, Machine Learning"
 url: "https://xueleyang.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -76,7 +76,7 @@ ga_domain: auto
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Learning never stops."
+sidebar-about-description: "Be ambitious, be determined."
 sidebar-avatar: /img/post-bg-head.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
