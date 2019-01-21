@@ -52,4 +52,4 @@ con_ee.connect(p=epsilon)#synaptic connacting probability
 con_ee.w = J_e#synaptic weight
 ```
 #### inhibitory synaptic current
-The inhibitory synaptic current is similar as excitatory ones.
+The inhibitory synaptic current is similar as excitatory one.
