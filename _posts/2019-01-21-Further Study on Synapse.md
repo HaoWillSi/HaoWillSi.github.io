@@ -21,12 +21,10 @@ model from the equation (eg. alpha function) in the paper I read. Therefore, I t
 the Brian. 
 ### Learning 
 In the paper I have read, most synapses were modeled as alpha function. As is shown in the pic below:
-![](https://github.com/HardworkingChris/Brian2_Learning/raw/master/3-synapse/synapse_alpha.png)  
-, which is from the paper [_Propagation of Firing Rate in a Feed-Forward Neuronal Network_]
-(https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.96.018103)
+![](https://github.com/HardworkingChris/Brian2_Learning/raw/master/3-synapse/synapse_alpha.PNG)  
+, which is from the paper [_Propagation of Firing Rate in a Feed-Forward Neuronal Network_](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.96.018103)
 
-I learned that in Brian2 the authors give an introduction named [_Converting from integrated form to ODEs_]
-(https://brian2.readthedocs.io/en/stable/user/converting_from_integrated_form.html)
+I learned that in Brian2 the authors give an introduction named [_Converting from integrated form to ODEs_](https://brian2.readthedocs.io/en/stable/user/converting_from_integrated_form.html)
 to show how to implement ordinary differential equations.
 Some examples shown in the introduction include the Alpha synapse, $$V(t)=(t/τ)e^{−t/τ}$$:
 ```py
