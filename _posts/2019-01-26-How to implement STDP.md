@@ -73,8 +73,8 @@ run(30*ms)
 respectively. When a prespike occurs the $$a_{post}$$ updates and the synaptic weight changes by some rules we definite.
 The `on_pre` and `on_post` are the corresponding events when the spike occurs.
 
-A classical example from the Brian2 website from 
-Spike-timing dependent plasticity Adapted from Song, Miller and Abbott (2000) and Song and Abbott (2001).
+A classical example on the Brian2 website is 
+_Spike-timing dependent plasticity Adapted from Song, Miller and Abbott (2000) and Song and Abbott (2001)._
 ```py
 from brian2 import *
 
