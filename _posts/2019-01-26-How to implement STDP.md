@@ -123,6 +123,6 @@ run(100*second, report='text')
 From the example above, I know that the necessary parameters are <br>
 `Apre,Apost` , record the trace of the pre and post activity.<br>
 `on_pre`, `on_post`, definite the specifying events after a spike.<br>
-`Apre` is showing in `on_pre`, Apost` is showing in `on_post`. <br>
+`Apre` is showing in `on_pre`, `Apost` is showing in `on_post`. <br>
 `ge += w`, change the synaptic conductance.<br>
 `w + Apost`, rules of synaptic weights.
