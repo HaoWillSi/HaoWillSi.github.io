@@ -24,16 +24,15 @@ introduce a type of synaptic plasticity called the Spike-Timing Dependent Plasti
 ### Learning 
 STDP may be the underlying mechanism of learning and memory in the brain. As is shown in the eq. below, STDP is normally defined by an 
 equation something like this:<br>
-$$\Delta w = \sum_{t_{pre}}\sum_{t_{post}}W(t_{post}-t_{pre})$$     (1) <br>
-
+$$\Delta w = \sum_{t_{pre}}\sum_{t_{post}}W(t_{post}-t_{pre})$$ <br>
 That is, the change in synaptic weight $$w$$ is the sum over all presynaptic spike times $$t_{pre}$$ and postsynaptic spike times 
-$$t_{post}$$ of some function $$W$$ of the difference in these spike times. A commonly used function $$W$$ is:
+$$t_{post}$$ of some function $$W$$ of the difference in these spike times. A commonly used function $$W$$ is:<br>
 $$
 W(\Delta t)=\left\{\begin{matrix}
 A_{pre}e^{-\Delta t/\tau _{pre}} \quad\Delta t>0\\ 
 A_{post}e^{-\Delta t/\tau _{post}} \quad\Delta t<0
 \end{matrix}\right.
-$$
+$$<br>
 , of which figure is shown below.
 
 ![](https://github.com/HardworkingChris/Brian2_Learning/raw/master/3-synapse/STDP.jpg)  
