@@ -72,9 +72,9 @@ run(30*ms)
 ```
 , in which the $$a_{pre}$$ and $$a_{post}$$ are the parameters to record the trace of the presynaptic and postsynaptic activity, 
 respectively. When a prespike occurs the $$a_{post}$$ updates and the synaptic weight changes by some rules we definite.
-The _on_pre_ and _on_post_ are the corresponding events when the spike occurs.
+The `on_pre` and `on_post` are the corresponding events when the spike occurs.
 
-#### A classical example from the Brian2 website from 
+A classical example from the Brian2 website from 
 Spike-timing dependent plasticity Adapted from Song, Miller and Abbott (2000) and Song and Abbott (2001).
 ```py
 from brian2 import *
