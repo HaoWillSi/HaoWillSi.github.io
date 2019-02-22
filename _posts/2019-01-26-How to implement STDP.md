@@ -125,3 +125,6 @@ From the example above, I know that the necessary parameters are <br>
 `Apre` is showing in `on_pre`, `Apost` is showing in `on_post`. <br>
 `ge += w`, change the synaptic conductance.<br>
 `w + Apost`, rules of synaptic weights.
+
+Above is the basic concept and implemention of the STDP, actually, there are some amazing applications of STDP like `MNIST` 
+handwriting recognition, which is said to be better than the traditional artificial neural network.
