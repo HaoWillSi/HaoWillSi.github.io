@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      A single implementation of feedforward neuronal networks with HH neurons in Brian2
+title:      A simple implementation of feedforward neuronal networks with HH neurons in Brian2
 subtitle:   Adapted from Diesmann code exmple 
 date:       2019-03-25
 author:     HSI
@@ -13,7 +13,7 @@ tags:
     - Brian2
     - python    
 ---
-A single implementation of feedforward neuronal networks with HH neurons in Brian2
+A simple implementation of feedforward neuronal networks with HH neurons in Brian2
 ===
 
 This is my code of implementation of FFN wiht HH neurons, which is from 
