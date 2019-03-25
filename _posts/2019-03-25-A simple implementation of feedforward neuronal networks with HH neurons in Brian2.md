@@ -10,6 +10,7 @@ tags:
     - feedforward neuronal network
     - firing rate 
     - propagation
+    - HH neuron
     - Brian2
     - python    
 ---
