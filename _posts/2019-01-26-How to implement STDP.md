@@ -70,7 +70,7 @@ S.connect(i=0, j=1)
 run(30*ms)
 ```
 , in which the $$a_{pre}$$ and $$a_{post}$$ are the parameters to record the trace of the presynaptic and postsynaptic activity, 
-respectively. When a prespike occurs the $$a_{post}$$ updates and the synaptic weight changes by some rules we definite.
+respectively. When a prespike occurs the $$a_{post}$$ updates and the synaptic weight changes by some rules we define.
 The `on_pre` and `on_post` are the corresponding events when the spike occurs.
 
 A classical example on the Brian2 website is 
