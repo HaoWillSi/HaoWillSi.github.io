@@ -39,15 +39,22 @@ According to the introduction about ODEs implementation and examples, I write th
 synaptic currents.
 
 #### excitatory synaptic current
-(1) synaptic conductance (alpha function)<br>
+(1) synaptic conductance (alpha function) equation <br>
 ```py
-dge/dt = -ge/taue: 1 
-
-dv/dt = +ge*(Ee-v) :volt # the right part is the iterative part in the main equation of membrane potential
+eqs_synapse ='''
+dg/dt = -g/tau : siemens 
+ds/dt = s/tau : siemens 
+'''
 ```
-(2) synaptic weight <br>
+(2) synapse equation in Neuron eq. <br>
 ```py
-con_ee.append(Synapses(group_e[m*groupsize_e:(m+1)*groupsize_e], group_e[m*groupsize_e:(m+1)*groupsize_e], 'w: 1', on_pre='ge += w'))#updating
+eqs_neuron ='''
+dv/dt = (- g_na*(m*m*m)*h*(v-ENa) - g_k*(n*n*n*n)*(v-EK) - gl*(v-El) + gsyn*(Ee-v) + I )/Cm: volt
+'''+eqs_synapse
+```
+(3) synaptic weight <br>
+```py
+con_ee.append(Synapses(group[m*groupsize_e:(m+1)*groupsize], group[m*groupsize:(m+1)*groupsize], 'w: 1', on_pre='g += w'))#updating
 con_ee.connect(p=epsilon)#synaptic connacting probability
 con_ee.w = J_e#synaptic weight
 ```
