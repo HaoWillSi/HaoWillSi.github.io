@@ -42,8 +42,8 @@ synaptic currents.
 (1) synaptic conductance (alpha function) equation <br>
 ```py
 eqs_synapse ='''
-dg/dt = -g/tau : siemens 
-ds/dt = s/tau : siemens 
+dgsyn/dt = (ge-gsyn)*(1./taue) : siemens
+dge/dt = -ge*(1./taue) : siemens
 '''
 ```
 (2) synapse equation in Neuron eq. <br>
@@ -54,7 +54,7 @@ dv/dt = (- g_na*(m*m*m)*h*(v-ENa) - g_k*(n*n*n*n)*(v-EK) - gl*(v-El) + gsyn*(Ee-
 ```
 (3) synaptic weight <br>
 ```py
-con_ee.append(Synapses(group[m*groupsize_e:(m+1)*groupsize], group[m*groupsize:(m+1)*groupsize], 'w: 1', on_pre='g += w'))#updating
+con_ee.append(Synapses(group[m*groupsize_e:(m+1)*groupsize], group[m*groupsize:(m+1)*groupsize], 'w: 1', on_pre='ge += w'))#updating
 con_ee.connect(p=epsilon)#synaptic connacting probability
 con_ee.w = J_e#synaptic weight
 ```
