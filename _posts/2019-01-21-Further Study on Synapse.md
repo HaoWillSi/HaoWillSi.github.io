@@ -29,8 +29,8 @@ to show how to implement ordinary differential equations.
 Some examples shown in the introduction include the Alpha synapse, $$V(t)=(t/τ)e^{−t/τ}$$:
 ```py
 eqs = '''
-dV/dt = (x-V)/tau : 1\       
-dx/dt = -x/tau    : 1
+        dV/dt = (x-V)/tau : 1    
+        dx/dt = -x/tau    : 1
 '''
 on_pre = 'x += w'
 ```
@@ -42,21 +42,21 @@ synaptic currents.
 (1) synaptic conductance (alpha function) equation <br>
 ```py
 eqs_synapse ='''
-dgsyn/dt = (ge-gsyn)*(1./taue) : siemens\
-dge/dt = -ge*(1./taue) : siemens
+        dgsyn/dt = (ge-gsyn)*(1./taue) : siemens
+        dge/dt = -ge*(1./taue) : siemens
 '''
 ```
 (2) synapse equation in Neuron eq. <br>
 ```py
 eqs_neuron ='''
-dv/dt = (- g_na*(m*m*m)*h*(v-ENa) - g_k*(n*n*n*n)*(v-EK) - gl*(v-El) + gsyn*(Ee-v) + I )/Cm: volt\       
-'''+eqs_synapse
+        dv/dt = (- g_na*(m*m*m)*h*(v-ENa) - g_k*(n*n*n*n)*(v-EK) - gl*(v-El) + gsyn*(Ee-v) + I )/Cm: volt       
+        '''+eqs_synapse
 ```
 (3) synaptic weight <br>
 ```py
-con_ee.append(Synapses(group[m*groupsize_e:(m+1)*groupsize], group[m*groupsize:(m+1)*groupsize], 'w: 1', on_pre='ge += w'))#updating\        
-con_ee.connect(p=epsilon)#synaptic connacting probability       
-con_ee.w = J_e#synaptic weight
+        con_ee.append(Synapses(group[m*groupsize_e:(m+1)*groupsize], group[m*groupsize:(m+1)*groupsize], 'w: 1', on_pre='ge += w'))#updating        
+        con_ee.connect(p=epsilon)#synaptic connacting probability       
+        con_ee.w = J_e#synaptic weight
 ```
 #### inhibitory synaptic current
 The inhibitory synaptic current is similar as the excitatory one.
