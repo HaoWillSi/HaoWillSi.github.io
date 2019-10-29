@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Synapse in Brian2
-subtitle:   Brian2中突触建模
+subtitle:   Brian2中的突触建模
 date:       2019-10-29
 author:     HSI
 header-img: img/post-bg-desk.jpg
@@ -52,7 +52,7 @@ Similarly, we now can easily understand the conductance-based synapse.
 ### Conductance-based synapse (COBA)
 The conductance-based synapse represent the conductance of synapses multiplying the corresponding potential difference to get the synaptic currents.
 Comparing to the current-based current, (I think) COBA fits the biological synapses better.
-### exponential conductance
+#### exponential conductance
 ```py
 tau = 5*ms; E = 0*mV
 syn_eqs = Equations('dg_syn/dt = -g_syn/tau : siemens')
@@ -63,7 +63,7 @@ syn = Synapses(source, group, on_pre='g_syn += 10*nS')
 # ... connect synapses, etc.
 ```
 ,and
-### alpha conductance
+#### alpha conductance
 ```py
 tau = 2.5*ms; E = 0*mV
 syn_eqs = Equations('''dg_syn/dt = (s - g_syn)/tau : siemens
